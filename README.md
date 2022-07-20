@@ -12,12 +12,12 @@ https://captionthis.com
 - A featured image is randomly selected each day and put on the front page.
 
 ## Technologies
-- Front-End
-  - react
-- Back-End
-  - postgresql
-  - sequelize
-  - express
-  - node.js  
+- Frontend
+  - React
+- Backend
+  - Postgresql
+  - Sequelize
+  - Express
+  - Node.js  
 - Deployment
-  - heroku
+  - Heroku
