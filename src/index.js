@@ -1,7 +1,18 @@
 "use strict";
 const express = require("express");
+const exphbs = require("express-handlebars");
+const Sequelize = require("sequelize");
+const path = require("path");
+const db = require("../models");
 
-const port = process.env.PORT || 3000;
+db.sequelize
+    .authenticate()
+    .then(() => {
+        console.log("Database connected...");
+    })
+    .catch((err) => {
+        console.log("Error: " + err);
+    });
 
 const app = express();
 
@@ -9,6 +20,7 @@ app.get("/", (req, res) => {
     res.send("Testing 123!");
 });
 
-app.listen(port, () => {
-    console.log(`listening on http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`);
 });
