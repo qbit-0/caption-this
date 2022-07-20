@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "dpham",
+        "password": "password",
+        "database": "photo_caption_contest",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "dpham",
+        "password": "password",
+        "database": "photo_caption_contest",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "dpham",
+        "password": "password",
+        "database": "photo_caption_contest",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}
